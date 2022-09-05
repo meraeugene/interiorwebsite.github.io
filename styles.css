@@ -294,6 +294,7 @@
 
     .search i{
         margin-left: -10px;
+        font-size: 1.1rem;
     }
 
     /* javascript classes */
@@ -329,7 +330,7 @@
 
     .logo a{
         margin-left: -30px;
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 
     .logo::after{
@@ -393,7 +394,7 @@
 
     .menu-fa .fa{
         margin: 0 10px;
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
     .navbar{
