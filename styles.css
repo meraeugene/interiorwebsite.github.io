@@ -157,7 +157,7 @@
 }
 
 .navbar ul{
-    margin-right: -180px;
+    margin-right: -150px;
 }
 
 .search{
@@ -259,14 +259,6 @@
 
 @media screen and (min-width: 200px) and (max-width: 1090px){
 
-    .search input{
-        width: 1890px;
-    }
-
-    .search i{
-        display: none;
-    }
-
     .search_box a{
        border-radius: 10px;
         width: 100%;
@@ -274,11 +266,12 @@
     }
 
     .search_box{
-        width: 130px;
+        width: 157px;
         top: 35px;
         height: 230px;
         border-radius: 10px;
         margin-left: -10px;
+        z-index: 2;
     }
 
     .search_box a img{
@@ -288,13 +281,30 @@
     .search_box a .content2 h6{
         font-size:0.8rem;
         text-align: left;
-        margin-left: 10px;
+        margin-left: 15px;
     }
     
     .search_box::-webkit-scrollbar{
         display: none;
     }
 
+    .search{
+        margin-top: 20px;
+    }
+
+    .search i{
+        margin-left: -10px;
+    }
+
+    /* javascript classes */
+
+    .search .search_input{
+        width: 105px;
+    }
+
+    .search_input{
+        margin-left: -10px;
+    }
 
     .content h1{
         font-size: 1.7rem;
@@ -319,6 +329,7 @@
 
     .logo a{
         margin-left: -30px;
+        font-size: 0.7rem;
     }
 
     .logo::after{
@@ -326,7 +337,7 @@
     }
     
     .navbar .fa{
-        font-size: 30px;
+        font-size: 1.4rem;
         display: block;
         color: white;
         cursor: pointer;
@@ -362,7 +373,7 @@
     .nav-links ul li{
         display: block;
         margin: 25px auto;
-        font-size: 1rem;
+        font-size: .9rem;
     }
 
     .nav-links .fa{
@@ -372,6 +383,21 @@
 
     .navbar ul li::after{
       display: none;
+    }
+
+    .menu-fa{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .menu-fa .fa{
+        margin: 0 10px;
+        font-size: 1rem;
+    }
+
+    .navbar{
+        padding: 20px 10px;
     }
 }
 
