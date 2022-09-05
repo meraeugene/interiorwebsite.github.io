@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+
 .hero{
     width: 100%;
     height: 100vh;
@@ -17,7 +19,6 @@
 .navbar{
     width: 100%;
     margin: auto;
-    padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,11 +27,11 @@
     min-height: 20px;
     z-index: 200;
     opacity: 1;
+    padding: 20px;
     background-color: black;
 }
 
 .logo{
-    margin: 0 30px;
     font-size: 18px;
     color: whitesmoke;
     font-weight: bold;
@@ -38,9 +39,15 @@
     z-index: 1;
     display: inline-block;
     cursor: pointer;
+    margin-left: 40px;
 }
 
-.navbar .fa{
+
+.menu-fa .fa{
+    display: none;
+}
+
+.close-fa .fa{
     display: none;
 }
 
@@ -49,13 +56,14 @@
     color: white;
 }
 
+
 .logo::after{
     width: 30px;
     height: 15px;
     background: linear-gradient(#fff, rgb(60, 228, 60));
     z-index: -1;
     position: absolute;
-    top: -15px;
+    top: -14px;
     left: 10px;
     content: '';
     transform: rotate(10deg);
@@ -148,25 +156,142 @@
     width: 100%;
 }
 
+.navbar ul{
+    margin-right: -180px;
+}
 
-.search-button{
+.search{
+    display: inline-block;
     color: white;
-    width: 23%;
-    padding: 10px 15px;
-    background-color: transparent;
-    border-radius: 20px;
-    font-size: 15px;
-    transition: .5s;
-    outline: none;
-    border: 1px solid rgba(60,228,60,0.7);
+    position: relative;
 }
 
-.search-button:hover{
-    box-shadow: 0px 0px 20px rgba(60,228,60,0.7);
+
+
+.search i{
+    color: rgb(255,255,255,.7);
+    font-size: 13px;
+    cursor: pointer;
+    transition: .4s linear;
 }
+
+.search i:hover{
+    color: white;
+}
+
+.search_box{
+    width: 220px;
+    height: 305px;
+    position: absolute;
+    top: 47px;
+    overflow:auto;
+    visibility: hidden;
+    opacity: 0;
+    background-color: black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.search_box::-webkit-scrollbar{
+    width: 7px;
+    border-radius: 10px;
+    background: rgb(184,184,184,.7);
+}
+
+.search_box::-webkit-scrollbar-thumb{
+    background: #166D3B;
+    border-radius: 10px;
+}
+
+.search_box a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    transition: .3s linear;
+   
+}
+
+.search_box a:hover{
+    background-color: rgb(184,184,184,.6);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.search_box a img{
+    width: 75px;
+    border-radius: 5px;
+    margin: 0 7px;
+}
+
+.search_box a .content2{
+    color: white;
+}
+
+.search_box a .content2 h6{
+    font-size:0.7rem;
+    margin-right: 5px;
+}
+
+.search input{
+    padding: 3px 0px 3px 8px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background:transparent;
+    width: 0;
+    color: white;
+    transition: .3s linear;
+    font-size: 0.9rem;
+}
+
+/* javascript classes start */
+
+.search .search_input{
+    width: 180px;
+}
+
+/* javascript classes end */
+
 
 
 @media screen and (min-width: 200px) and (max-width: 1090px){
+
+    .search i{
+        display: none;
+    }
+
+    .search_box a{
+       border-radius: 10px;
+        width: 100%;
+        height:50px;
+    }
+
+    .search_box{
+        width: 100%;
+        top: 35px;
+        height: 230px;
+        border-radius: 10px;
+        margin-left: -10px;
+    }
+
+    .search_box a img{
+        display: none;
+    }
+
+    .search_box a .content2 h6{
+        font-size:0.8rem;
+        text-align: left;
+        margin-left: 10px;
+    }
+    
+    .search_box::-webkit-scrollbar{
+        display: none;
+    }
+
+
     .content h1{
         font-size: 1.7rem;
     }
@@ -193,7 +318,6 @@
         font-size: 30px;
         display: block;
         color: white;
-        margin-right: 25px;
         cursor: pointer;
     }
 
@@ -201,18 +325,15 @@
         display: block;
     }
 
-    .search-button{
-        display: none;
-    }
 
     .first-button button{
         margin: 15px auto;
     }
 
     .nav-links{
-        background: linear-gradient(rgba(60, 228, 60,0.20),rgba(0,0,0,0.80),rgba(0,0,0,0.80),rgba(0,0,0,0.80),rgba(60, 228, 60,0.20));
+        background-color: black;
         height: 100vh;
-        width: 30vw;
+        width: 50vw;
         position: fixed;
         top: 0;
         right: -330px;
@@ -224,12 +345,13 @@
     .nav-links ul{
         padding: 20px;
         padding-top: 0;
+        width: 90%;
     }
 
     .nav-links ul li{
         display: block;
         margin: 25px auto;
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .nav-links .fa{
@@ -753,7 +875,7 @@
     color: white;
 }
 
-.social-links .fa{
+.social-links i{
     height: 40px;
     width: 40px;
     font-size: 20px;
@@ -765,7 +887,7 @@
     transition: .5s;
 }
 
-.social-links .fa:hover{
+.social-links i:hover{
     background: rgba(60, 228, 60,0.9);
     color: white;
     transform: translateY(-7px);
@@ -1002,12 +1124,13 @@ footer{
    }
 
    .login-right-info p{
-    font-size: 1rem;
+    font-size: 0.9rem;
    }
 
    .login-right-info button{
     width: 80%;
-    font-size: 0.4rem;
+    font-size: 0.7rem;
+    white-space: nowrap;
    }
 
    .login-left input{

@@ -6,24 +6,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typical Designs Webpage</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 
     <div class="navbar">
         <h1 class="logo"><a href="#hero"> Gotcha Interior !</a></h1>
         <div class="nav-links" id="navLinks">
+            <div class="close-fa">
             <i class="fa fa-times" onclick="closeMenu()"></i>
+        </div>
     <ul >
         <li><a href="index.html">Home</a></li>
         <li><a href="td.html">Typical Designs</a></li>
         <li><a href="pr.html">Price & Reviews</a></li>
         <li><a href="https://interiorwebsiteblog.000webhostapp.com/blog.php">Blog</a></li>
-        <li><a href="about.html" >About us</a></li>
-        <input type="text" class="search-button" placeholder="Search here" >
+        <li><a href="about.html">About us</a></li>
+        <div class="search">
+            <input type="text" placeholder="Search here..." id="search" onkeyup="searchbutton()" >
+            <i class="fas fa-search" id="search_icon" ></i>
+            <div class="search_box" id="search_box">
+                <div class="product-list" id="product-list">
+                    <div class="product">
+                <a href="#title1">
+                    <img src="images/img1.webp" alt="">
+                    <div class="content2">
+                        <h6>Modern Interior Style</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#title2">
+                    <img src="images/img2.webp" alt="">
+                    <div class="content2">
+                        <h6>Transitional Interior Design</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#title3">
+                    <img src="images/img3.jpg" alt="">
+                    <div class="content2">
+                        <h6>Beach/Nautical Style</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#title4">
+                    <img src="images/img4.webp" alt="">
+                    <div class="content2">
+                        <h6>Farmhouse Interior Design Style</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#title5">
+                    <img src="images/img5.webp" alt="">
+                    <div class="content2">
+                        <h6>Scandinavian Interior Design</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#title6">
+                    <img src="images/img6.webp" alt="">
+                    <div class="content2">
+                        <h6> Rustic Style</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#title7">
+                    <img src="images/img7.webp" alt="">
+                    <div class="content2">
+                        <h6>Tropical Interior Design Style</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#title8">
+                    <img src="images/img8.webp" alt="">
+                    <div class="content2">
+                        <h6>Victorian Interior Design Style</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#title9">
+                    <img src="images/img9.webp" alt="">
+                    <div class="content2">
+                        <h6>Minimalist Interior Design Style</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#title10">
+                    <img src="images/img10.webp" alt="">
+                    <div class="content2">
+                        <h6>Hollywood Glam Interior Design Style</h6>
+                    </div>
+                </a>
+            </div>
+                
+            </div>
+            </div>
+        </div>
     </ul>
+    
 </div>
+<div class="menu-fa">
 <i class="fa fa-bars" onclick="openMenu()"></i>
+</div>
 </div>
     
     <section id="td" class="typical-designs">
@@ -32,10 +127,11 @@
             <h1>Typical Designs</h1>
             <p>Collection of Fascinating Interior Designs </p>
         </div>
-        <div class="td-box">
+        <h1 id="title1" style="opacity: 0;">anchor</h1>
+        <div class="td-box" >
             <div class="td-row">
             <div class="td-desc">
-                <h2>Modern Interior Style</h2>
+                <h2 >Modern Interior Style</h2>
                 <h3>Key attributes of modern interior design style include:</h3>
                 <ul class="modern">
                     <li>Absence of ornament,</li>
@@ -51,10 +147,11 @@
             </div>
         </div>
     </div>
-<div class="td-box">
+    <h1 id="title2" style="opacity: 0;">anchor</h1>
+<div class="td-box" >
         <div class="td-row">
         <div class="td-desc">
-            <h2>Transitional Interior Design</h2>
+            <h2  >Transitional Interior Design</h2>
             <h3>Transitional interior design elements include:</h3>
             <ul class="modern">
                 <li>Limited use of accessories,</li>
@@ -70,6 +167,7 @@
         </div>
     </div>
 </div>
+<h1 id="title3" style="opacity: 0;">anchor</h1>
 <div class="td-box">
     <div class="td-row">
     <div class="td-desc">
@@ -91,6 +189,7 @@
     </div>
 </div>
 </div>
+<h1 id="title4" style="opacity: 0;">anchor</h1>
 <div class="td-box">
     <div class="td-row">
     <div class="td-desc">
@@ -110,6 +209,7 @@
     </div>
 </div>
 </div>
+<h1 id="title5" style="opacity: 0;">anchor</h1>
 <div class="td-box">
     <div class="td-row">
     <div class="td-desc">
@@ -131,6 +231,7 @@
     </div>
 </div>
 </div>
+<h1 id="title6" style="opacity: 0;">anchor</h1>
 <div class="td-box">
     <div class="td-row">
     <div class="td-desc">
@@ -153,6 +254,7 @@
     </div>
 </div>
 </div>
+<h1 id="title7" style="opacity: 0;">anchor</h1>
 <div class="td-box">
     <div class="td-row">
     <div class="td-desc">
@@ -171,6 +273,7 @@
     </div>
 </div>
 </div>
+<h1 id="title8" style="opacity: 0;">anchor</h1>
 <div class="td-box">
     <div class="td-row">
     <div class="td-desc">
@@ -190,6 +293,7 @@
     </div>
 </div>
 </div>
+<h1 id="title9" style="opacity: 0;">anchor</h1>
 <div class="td-box">
     <div class="td-row">
     <div class="td-desc">
@@ -201,6 +305,7 @@
     </div>
 </div>
 </div>
+<h1 id="title10" style="opacity: 0;">anchor</h1>
 <div class="td-box">
     <div class="td-row">
     <div class="td-desc">
@@ -225,17 +330,80 @@
     </footer>
 
     <script>
-          // toggle menu 
+        
 
-          var navLinks = document.getElementById("navLinks");
+    // search function
 
-function openMenu(){
-    navLinks.style.right = "0";
-}
+    const searchbutton = () =>{
+        const searchbox = document.getElementById("search").value.toUpperCase();
+        const storeitems = document.getElementById("product-list")
+        const product = document.querySelectorAll(".product")
+        const productName = storeitems.getElementsByTagName("h6")
 
-function closeMenu(){
-    navLinks.style.right = "-330px";
-}
+        for (var i =0; i < productName.length; i++){
+            let match = product[i].getElementsByTagName('h6')[0];
+
+            if(match){
+                let textvalue = match.textContent || match.innerHTML
+                let div = document.getElementById('search_box');
+
+                if (textvalue.toUpperCase().indexOf(searchbox) > -1){
+                    product[i].style.display = "";
+                    div.style.visibility = "visible"
+                    div.style.opacity = 1;
+                } else {
+                    product[i].style.display = "none";
+                }
+                if (search.value ==0){
+                    div.style.visibility = "hidden";
+                    div.style.opacity = 0;
+                }
+            }
+        }
+    }
+
+
+
+    // slide search 
+    
+    let search = document.getElementById('search');
+    let search_icon = document.getElementById('search_icon');
+
+    search_icon.addEventListener  ('click', () => {
+        search.classList.toggle('search_input');
+    })
+
+
+// smooth scroll
+
+$(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 600, function(){
+  
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+    
+
     </script>
+
+<script src="script.js"></script>
 </body>
 </html>

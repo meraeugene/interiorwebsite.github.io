@@ -6,24 +6,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prices & Reviews Webpage</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 
     <div class="navbar">
         <h1 class="logo"><a href="#hero"> Gotcha Interior !</a></h1>
         <div class="nav-links" id="navLinks">
+            <div class="close-fa">
             <i class="fa fa-times" onclick="closeMenu()"></i>
+        </div>
     <ul >
         <li><a href="index.html">Home</a></li>
         <li><a href="td.html">Typical Designs</a></li>
         <li><a href="pr.html">Price & Reviews</a></li>
         <li><a href="https://interiorwebsiteblog.000webhostapp.com/blog.php">Blog</a></li>
-        <li><a href="about.html" >About us</a></li>
-        <input type="text" class="search-button" placeholder="Search here" >
+        <li><a href="about.html">About us</a></li>
+        <div class="search">
+            <input type="text" placeholder="Search here..." id="search" onkeyup="searchbutton()" >
+            <i class="fas fa-search" id="search_icon" ></i>
+            <div class="search_box" id="search_box">
+                <div class="product-list" id="product-list">
+                    <div class="product">
+                <a href="#price1">
+                    <img src="images/img1.webp" alt="">
+                    <div class="content2">
+                        <h6>Modern Interior Style</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#price1">
+                    <img src="images/img2.webp" alt="">
+                    <div class="content2">
+                        <h6>Transitional Interior Design</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#price2">
+                    <img src="images/img3.jpg" alt="">
+                    <div class="content2">
+                        <h6>Beach/Nautical Style</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#price2">
+                    <img src="images/img4.webp" alt="">
+                    <div class="content2">
+                        <h6>Farmhouse Interior Design Style</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#price3">
+                    <img src="images/img5.webp" alt="">
+                    <div class="content2">
+                        <h6>Scandinavian Interior Design</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#price3">
+                    <img src="images/img6.webp" alt="">
+                    <div class="content2">
+                        <h6> Rustic Style</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#price4">
+                    <img src="images/img7.webp" alt="">
+                    <div class="content2">
+                        <h6>Tropical Interior Design Style</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#price4">
+                    <img src="images/img8.webp" alt="">
+                    <div class="content2">
+                        <h6>Victorian Interior Design Style</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#price5">
+                    <img src="images/img9.webp" alt="">
+                    <div class="content2">
+                        <h6>Minimalist Interior Design Style</h6>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#price5">
+                    <img src="images/img10.webp" alt="">
+                    <div class="content2">
+                        <h6>Hollywood Glam Interior Design Style</h6>
+                    </div>
+                </a>
+            </div>
+                
+            </div>
+            </div>
+        </div>
     </ul>
 </div>
+<div class="menu-fa">
 <i class="fa fa-bars" onclick="openMenu()"></i>
+</div>
 </div>
 
      <!-- preview section -->
@@ -34,6 +128,7 @@
             <h1>Prices & Reviews</h1>
             <p>Prices are correlated to its Popularity and Reviews. (Hover images to view details)</p>
         </div>
+        <h1 id="price1" style="opacity: 0;">anchor</h1>
         <div class="preview-box">
             <div class="preview-image">
                 <img src="images/img1.webp" alt="" >
@@ -91,9 +186,9 @@
                 </div>
                 </div>
             </div>
-            <div class="preview-image">
+            <div class="preview-image" id="price2">
                 <img src="images/img3.jpg" alt=""  loading="lazy">
-                <div class="overlay"></div>
+                <div class="overlay" ></div>
                 <div class="preview-desc">
                     <div class="text-cover">
                     <h3>Beach  / Nautical Style</h3>
@@ -147,7 +242,7 @@
                 </div>
                 </div>
             </div>
-            <div class="preview-image">
+            <div class="preview-image" id="price3">
                 <img src="images/img5.webp" alt=""  loading="lazy">
                 <div class="overlay"></div>
                 <div class="preview-desc">
@@ -203,7 +298,7 @@
                 </div>
                 </div>
             </div>
-            <div class="preview-image">
+            <div class="preview-image" id="price4">
                 <img src="images/img7.webp" alt=""  loading="lazy">
                 <div class="overlay"></div>
                 <div class="preview-desc">
@@ -259,7 +354,7 @@
                 </div>
                 </div>
             </div>
-            <div class="preview-image">
+            <div class="preview-image" id="price5">
                 <img src="images/img9.webp" alt=""  loading="lazy">
                 <div class="overlay"></div>
                 <div class="preview-desc">
@@ -329,18 +424,78 @@
     </footer>
 
     <script>
+        
+    // search function
 
-          // toggle menu 
+    const searchbutton = () =>{
+        const searchbox = document.getElementById("search").value.toUpperCase();
+        const storeitems = document.getElementById("product-list")
+        const product = document.querySelectorAll(".product")
+        const productName = storeitems.getElementsByTagName("h6")
 
-          var navLinks = document.getElementById("navLinks");
+        for (var i =0; i < productName.length; i++){
+            let match = product[i].getElementsByTagName('h6')[0];
 
-function openMenu(){
-    navLinks.style.right = "0";
-}
+            if(match){
+                let textvalue = match.textContent || match.innerHTML
+                let div = document.getElementById('search_box');
 
-function closeMenu(){
-    navLinks.style.right = "-330px";
-}
+                if (textvalue.toUpperCase().indexOf(searchbox) > -1){
+                    product[i].style.display = "";
+                    div.style.visibility = "visible"
+                    div.style.opacity = 1;
+                } else {
+                    product[i].style.display = "none";
+                }
+                if (search.value ==0){
+                    div.style.visibility = "hidden";
+                    div.style.opacity = 0;
+                }
+            }
+        }
+    }
+
+
+
+    // slide search 
+    
+    let search = document.getElementById('search');
+    let search_icon = document.getElementById('search_icon');
+
+    search_icon.addEventListener  ('click', () => {
+        search.classList.toggle('search_input');
+    })
+
+
+// smooth scroll
+
+$(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 600, function(){
+  
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+    
     </script>
+
+ <script src="script.js"></script>
 </body>
 </html>
