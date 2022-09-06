@@ -492,17 +492,36 @@
 }
 
 @media screen and (min-width: 200px) and (max-width: 1090px){
-    .td-desc, .td-image{
+    .td-image{
         flex-basis: 100%;
         margin-bottom: 20px;
+    }
+
+    .td-desc{
+        margin-bottom: 10px;
     }
     .td-box{
         padding: 20px;
         margin: 10px auto;
     }
     .td-desc p{
-        margin-bottom: 20px;
+        font-size: .8rem;
     }
+
+    .td-desc h2{
+        font-size: .9rem;
+        margin-bottom: 10px;
+    }
+
+    .td-desc h3{
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .modern li{
+        font-size: 0.8rem;
+    }
+
     .title-text h1{
         font-size: 30px;
         text-align: left;
@@ -531,7 +550,7 @@
 
 .preview-box{
     width: 80%;
-    margin: 70px auto;
+    margin:20px auto;
     margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
