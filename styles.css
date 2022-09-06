@@ -308,7 +308,9 @@
     }
 
     .content h1{
-        font-size: 1.7rem;
+        font-size: 2rem;
+        width: 100%;
+        margin: auto;
     }
     .content p{
         font-size: 19px;
@@ -318,8 +320,7 @@
         margin-bottom: 40px;
     }
     .content{
-        margin: 0;
-        margin-top: 30px;
+        margin: 10px 0;
     }
     .logo{
         padding: 0;
@@ -346,6 +347,13 @@
 
     .first-button{
         display: block;
+        width: 90%;
+        margin: auto;
+    }
+
+    .first-button a{
+        width: 40%;
+        margin: 10px;
     }
 
 
