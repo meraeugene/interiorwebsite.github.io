@@ -1,500 +1,599 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prices & Reviews Webpage</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="navbar">
-        <h1 class="logo"><a href="#hero"> Gotcha Interior !</a></h1>
-        <div class="nav-links" id="navLinks">
-            <div class="close-fa">
-            <i class="fa fa-times" onclick="closeMenu()"></i>
+      <h1 class="logo"><a href="#hero"> Gotcha Interior !</a></h1>
+      <div class="nav-links" id="navLinks">
+        <div class="close-fa">
+          <i class="fa fa-times" onclick="closeMenu()"></i>
         </div>
-    <ul >
-        <div class="search">
-            <input type="text" placeholder="Search" id="search" onkeyup="searchbutton()" >
+        <ul>
+          <div class="search">
+            <input
+              type="text"
+              placeholder="Search"
+              id="search"
+              onkeyup="searchbutton()"
+            />
             <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
             <div class="search_box" id="search_box">
-                <div class="product-list" id="product-list">
-                    <div class="product">
-                <a href="#price1">
-                    <img src="images/img1.webp" alt=""  loading="lazy">
+              <div class="product-list" id="product-list">
+                <div class="product">
+                  <a href="#price1">
+                    <img src="images/img1.webp" alt="" loading="lazy" />
                     <div class="content2">
-                        <h6>Modern Interior Style</h6>
+                      <h6>Modern Interior Style</h6>
                     </div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#price1">
-                    <img src="images/img2.webp" alt=""  loading="lazy">
+                  </a>
+                </div>
+                <div class="product">
+                  <a href="#price1">
+                    <img src="images/img2.webp" alt="" loading="lazy" />
                     <div class="content2">
-                        <h6>Transitional Interior Design</h6>
+                      <h6>Transitional Interior Design</h6>
                     </div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#price2">
-                    <img src="images/img3.jpg" alt=""  loading="lazy">
+                  </a>
+                </div>
+                <div class="product">
+                  <a href="#price2">
+                    <img src="images/img3.jpg" alt="" loading="lazy" />
                     <div class="content2">
-                        <h6>Beach/Nautical Style</h6>
+                      <h6>Beach/Nautical Style</h6>
                     </div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#price2">
-                    <img src="images/img4.webp" alt=""  loading="lazy">
+                  </a>
+                </div>
+                <div class="product">
+                  <a href="#price2">
+                    <img src="images/img4.webp" alt="" loading="lazy" />
                     <div class="content2">
-                        <h6>Farmhouse Interior Design Style</h6>
+                      <h6>Farmhouse Interior Design Style</h6>
                     </div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#price3">
-                    <img src="images/img5.webp" alt=""  loading="lazy">
+                  </a>
+                </div>
+                <div class="product">
+                  <a href="#price3">
+                    <img src="images/img5.webp" alt="" loading="lazy" />
                     <div class="content2">
-                        <h6>Scandinavian Interior Design</h6>
+                      <h6>Scandinavian Interior Design</h6>
                     </div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#price3">
-                    <img src="images/img6.webp" alt=""  loading="lazy">
+                  </a>
+                </div>
+                <div class="product">
+                  <a href="#price3">
+                    <img src="images/img6.webp" alt="" loading="lazy" />
                     <div class="content2">
-                        <h6> Rustic Style</h6>
+                      <h6>Rustic Style</h6>
                     </div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#price4">
-                    <img src="images/img7.webp" alt=""  loading="lazy">
+                  </a>
+                </div>
+                <div class="product">
+                  <a href="#price4">
+                    <img src="images/img7.webp" alt="" loading="lazy" />
                     <div class="content2">
-                        <h6>Tropical Interior Design Style</h6>
+                      <h6>Tropical Interior Design Style</h6>
                     </div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#price4">
-                    <img src="images/img8.webp" alt=""  loading="lazy">
+                  </a>
+                </div>
+                <div class="product">
+                  <a href="#price4">
+                    <img src="images/img8.webp" alt="" loading="lazy" />
                     <div class="content2">
-                        <h6>Victorian Interior Design Style</h6>
+                      <h6>Victorian Interior Design Style</h6>
                     </div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#price5">
-                    <img src="images/img9.webp" alt=""  loading="lazy">
+                  </a>
+                </div>
+                <div class="product">
+                  <a href="#price5">
+                    <img src="images/img9.webp" alt="" loading="lazy" />
                     <div class="content2">
-                        <h6>Minimalist Interior Design Style</h6>
+                      <h6>Minimalist Interior Design Style</h6>
                     </div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="#price5">
-                    <img src="images/img10.webp" alt=""  loading="lazy">
+                  </a>
+                </div>
+                <div class="product">
+                  <a href="#price5">
+                    <img src="images/img10.webp" alt="" loading="lazy" />
                     <div class="content2">
-                        <h6>Hollywood Glam Interior Design Style</h6>
+                      <h6>Hollywood Glam Interior Design Style</h6>
                     </div>
-                </a>
+                  </a>
+                </div>
+              </div>
             </div>
-                
-            </div>
-            </div>
-        </div>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="td.html">Typical Designs</a></li>
-        <li><a href="pr.html">Price & Reviews</a></li>
-        <li><a href="https://interiorwebsiteblog.000webhostapp.com/blog.php">Blog</a></li>
-        <li><a href="about.html">About us</a></li>
-    </ul>
-</div>
-<div class="menu-fa">
-<i class="fa fa-bars" onclick="openMenu()"></i>
-</div>
-</div>
+          </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="td.html">Typical Designs</a></li>
+          <li><a href="pr.html">Price & Reviews</a></li>
+          <li>
+            <a href="https://interiorwebsiteblog.000webhostapp.com/blog.php"
+              >Blog</a
+            >
+          </li>
+          <li><a href="about.html">About us</a></li>
+        </ul>
+      </div>
+      <div class="menu-fa">
+        <i class="fa fa-bars" onclick="openMenu()"></i>
+      </div>
+    </div>
 
-     <!-- preview section -->
+    <!-- preview section -->
 
-     <section id="preview" class="preview">
-        
-        <div class="title-text">
-            <h1>Prices & Reviews</h1>
-            <p>Prices are correlated to its Popularity and Reviews. (Hover images to view details)</p>
+    <section id="preview" class="preview">
+      <div class="title-text">
+        <h1>Prices & Reviews</h1>
+        <p>
+          Prices are correlated to its Popularity and Reviews. (Hover images to
+          view details)
+        </p>
+      </div>
+      <h1 id="price1" style="opacity: 0">anchor</h1>
+      <div class="preview-box">
+        <div class="preview-image">
+          <img src="images/img1.webp" alt="" />
+          <div class="overlay"></div>
+          <div class="preview-desc">
+            <div class="text-cover">
+              <h3>Modern Style</h3>
+              <h4>980,000 $</h4>
+            </div>
+            <div class="review-box">
+              <img src="images/arem.jpg" alt="" />
+              <div class="review-info">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita, qui.
+                </p>
+                <h3>Andrew Villalon</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                <i class="fa fa-star-o"></i>
+                <span class="none-two">(2522)</span>
+                <span class="none">$860,000</span>
+              </div>
+              <div class="second-buttons">
+                <button type="submit" class="order">Add to Cart</button>
+                <button type="submit" class="fav">Add to Favorites</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <h1 id="price1" style="opacity: 0;">anchor</h1>
-        <div class="preview-box">
-            <div class="preview-image">
-                <img src="images/img1.webp" alt="" >
-                <div class="overlay"></div>
-                <div class="preview-desc">
-                    <div class="text-cover">
-                    <h3>Modern  Style</h3>
-                        <h4>980,000 $</h4>
-                </div>
-                <div class="review-box">
-                    <img src="images/arem.jpg" alt="">
-                    <div class="review-info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, qui.</p>
-                        <h3>Andrew Villalon</h3>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                        <i class="fa fa-star-o"></i>
-                        <span class="none-two">(2522)</span>
-                        <span class="none">$860,000</span>
-                    </div>
-                    <div class="second-buttons">
-                        <button type="submit" class="order">Add to Cart</button>
-                        <button type="submit" class="fav">Add to Favorites</button>
-                    </div>
-                </div>
-                </div>
+        <div class="preview-image">
+          <img src="images/img2.webp" alt="" />
+          <div class="overlay"></div>
+          <div class="preview-desc">
+            <div class="text-cover">
+              <h3>Transitional Style</h3>
+              <h4>990,000 $</h4>
             </div>
-            <div class="preview-image">
-                <img src="images/img2.webp" alt="">
-                <div class="overlay"></div>
-                <div class="preview-desc">
-                    <div class="text-cover">
-                    <h3>Transitional  Style</h3>
-                        <h4>990,000 $</h4>
-                </div>
-                <div class="review-box">
-                    <img src="images/arem.jpg" alt="">
-                    <div class="review-info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, qui.</p>
-                        <h3>Andrew Villalon</h3>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                        <span class="none-two">(2524)</span>
-                        <span class="none">$860,000</span>
-                    </div>
-                    <div class="second-buttons">
-                        <button type="submit" class="order">Add to Cart</button>
-                        <button type="submit" class="fav">Add to Favorites</button>
-                    </div>
-                </div>
-                </div>
+            <div class="review-box">
+              <img src="images/arem.jpg" alt="" />
+              <div class="review-info">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita, qui.
+                </p>
+                <h3>Andrew Villalon</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                <span class="none-two">(2524)</span>
+                <span class="none">$860,000</span>
+              </div>
+              <div class="second-buttons">
+                <button type="submit" class="order">Add to Cart</button>
+                <button type="submit" class="fav">Add to Favorites</button>
+              </div>
             </div>
-            <div class="preview-image" id="price2">
-                <img src="images/img3.jpg" alt=""  loading="lazy">
-                <div class="overlay" ></div>
-                <div class="preview-desc">
-                    <div class="text-cover">
-                    <h3>Beach  / Nautical Style</h3>
-                        <h4>985,000 $</h4>
-                </div>
-                <div class="review-box">
-                    <img src="images/arem.jpg" alt=""  loading="lazy">
-                    <div class="review-info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, qui.</p>
-                        <h3>Andrew Villalon</h3>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                        <span class="none-two">(1824)</span>
-                        <span class="none">$820,000</span>
-                    </div>
-                    <div class="second-buttons">
-                        <button type="submit" class="order">Add to Cart</button>
-                        <button type="submit" class="fav">Add to Favorites</button>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="preview-image">
-                <img src="images/img4.webp" alt=""  loading="lazy">
-                <div class="overlay"></div>
-                <div class="preview-desc">
-                    <div class="text-cover">
-                    <h3>Farmhouse Style</h3>
-                        <h4>950,000 $</h4>
-                </div>
-                <div class="review-box">
-                    <img src="images/arem.jpg" alt=""  loading="lazy">
-                    <div class="review-info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, qui.</p>
-                        <h3>Andrew Villalon</h3>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                        <i class="fa fa-star-o"></i>
-                        <span class="none-two">(2024)</span>
-                        <span class="none">$835,000</span>
-                    </div>
-                    <div class="second-buttons">
-                        <button type="submit" class="order">Add to Cart</button>
-                        <button type="submit" class="fav">Add to Favorites</button>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="preview-image" id="price3">
-                <img src="images/img5.webp" alt=""  loading="lazy">
-                <div class="overlay"></div>
-                <div class="preview-desc">
-                    <div class="text-cover">
-                    <h3>Scandinavian Style</h3>
-                        <h4>975,000 $</h4>
-                </div>
-                <div class="review-box">
-                    <img src="images/arem.jpg" alt=""  loading="lazy">
-                    <div class="review-info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, qui.</p>
-                        <h3>Andrew Villalon</h3>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                        <span class="none-two">(3224)</span>
-                        <span class="none">$895,000</span>
-                    </div>
-                    <div class="second-buttons">
-                        <button type="submit" class="order">Add to Cart</button>
-                        <button type="submit" class="fav">Add to Favorites</button>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="preview-image">
-                <img src="images/img6.webp" alt=""  loading="lazy">
-                <div class="overlay"></div>
-                <div class="preview-desc">
-                    <div class="text-cover">
-                    <h3>Rustic Style</h3>
-                        <h4>945,000 $</h4>
-                </div>
-                <div class="review-box">
-                    <img src="images/arem.jpg" alt=""  loading="lazy">
-                    <div class="review-info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, qui.</p>
-                        <h3>Andrew Villalon</h3>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                        <span class="none-two">(1924)</span>
-                        <span class="none">$830,000</span>
-                    </div>
-                    <div class="second-buttons">
-                        <button type="submit" class="order">Add to Cart</button>
-                        <button type="submit" class="fav">Add to Favorites</button>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="preview-image" id="price4">
-                <img src="images/img7.webp" alt=""  loading="lazy">
-                <div class="overlay"></div>
-                <div class="preview-desc">
-                    <div class="text-cover">
-                    <h3>Tropical Style</h3>
-                        <h4>945,000 $</h4>
-                </div>
-                <div class="review-box">
-                    <img src="images/arem.jpg" alt=""  loading="lazy">
-                    <div class="review-info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, qui.</p>
-                        <h3>Andrew Villalon</h3>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                        <span class="none-two">(2524)</span>
-                        <span class="none">$850,000</span>
-                    </div>
-                    <div class="second-buttons">
-                        <button type="submit" class="order">Add to Cart</button>
-                        <button type="submit" class="fav">Add to Favorites</button>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="preview-image">
-                <img src="images/img8.webp" alt=""  loading="lazy">
-                <div class="overlay"></div>
-                <div class="preview-desc">
-                    <div class="text-cover">
-                    <h3>Victorian Style</h3>
-                        <h4>985,000 $</h4>
-                </div>
-                <div class="review-box">
-                    <img src="images/arem.jpg" alt=""  loading="lazy">
-                    <div class="review-info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, qui.</p>
-                        <h3>Andrew Villalon</h3>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                        <span class="none-two">(1934)</span>
-                        <span class="none">$840,000</span>
-                    </div>
-                    <div class="second-buttons">
-                        <button type="submit" class="order">Add to Cart</button>
-                        <button type="submit" class="fav">Add to Favorites</button>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="preview-image" id="price5">
-                <img src="images/img9.webp" alt=""  loading="lazy">
-                <div class="overlay"></div>
-                <div class="preview-desc">
-                    <div class="text-cover">
-                    <h3>Minimalist Style</h3>
-                        <h4>935,000 $</h4>
-                </div>
-                <div class="review-box">
-                    <img src="images/arem.jpg" alt=""  loading="lazy">
-                    <div class="review-info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, qui.</p>
-                        <h3>Andrew Villalon</h3>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                        <span class="none-two">(2134)</span>
-                        <span class="none">$850,000</span>
-                    </div>
-                    <div class="second-buttons">
-                        <button type="submit" class="order">Add to Cart</button>
-                        <button type="submit" class="fav">Add to Favorites</button>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="preview-image">
-                <img src="images/img10.webp" alt=""  loading="lazy">
-                <div class="overlay"></div>
-                <div class="preview-desc">
-                    <div class="text-cover">
-                    <h3>Hollywood Glam Style</h3>
-                        <h4>985,000 $</h4>
-                </div>
-                <div class="review-box">
-                    <img src="images/arem.jpg" alt=""  loading="lazy">
-                    <div class="review-info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, qui.</p>
-                        <h3>Andrew Villalon</h3>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                        <span class="none-two">(2224)</span>
-                        <span class="none">$890,000</span>
-                    </div>
-                    <div class="second-buttons">
-                        <button type="submit" class="order">Add to Cart</button>
-                        <button type="submit" class="fav">Add to Favorites</button>
-                    </div>
-                </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="preview-image" id="price2">
+          <img src="images/img3.jpg" alt="" loading="lazy" />
+          <div class="overlay"></div>
+          <div class="preview-desc">
+            <div class="text-cover">
+              <h3>Beach / Nautical Style</h3>
+              <h4>985,000 $</h4>
+            </div>
+            <div class="review-box">
+              <img src="images/arem.jpg" alt="" loading="lazy" />
+              <div class="review-info">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita, qui.
+                </p>
+                <h3>Andrew Villalon</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                <span class="none-two">(1824)</span>
+                <span class="none">$820,000</span>
+              </div>
+              <div class="second-buttons">
+                <button type="submit" class="order">Add to Cart</button>
+                <button type="submit" class="fav">Add to Favorites</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="preview-image">
+          <img src="images/img4.webp" alt="" loading="lazy" />
+          <div class="overlay"></div>
+          <div class="preview-desc">
+            <div class="text-cover">
+              <h3>Farmhouse Style</h3>
+              <h4>950,000 $</h4>
+            </div>
+            <div class="review-box">
+              <img src="images/arem.jpg" alt="" loading="lazy" />
+              <div class="review-info">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita, qui.
+                </p>
+                <h3>Andrew Villalon</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                <i class="fa fa-star-o"></i>
+                <span class="none-two">(2024)</span>
+                <span class="none">$835,000</span>
+              </div>
+              <div class="second-buttons">
+                <button type="submit" class="order">Add to Cart</button>
+                <button type="submit" class="fav">Add to Favorites</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="preview-image" id="price3">
+          <img src="images/img5.webp" alt="" loading="lazy" />
+          <div class="overlay"></div>
+          <div class="preview-desc">
+            <div class="text-cover">
+              <h3>Scandinavian Style</h3>
+              <h4>975,000 $</h4>
+            </div>
+            <div class="review-box">
+              <img src="images/arem.jpg" alt="" loading="lazy" />
+              <div class="review-info">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita, qui.
+                </p>
+                <h3>Andrew Villalon</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                <span class="none-two">(3224)</span>
+                <span class="none">$895,000</span>
+              </div>
+              <div class="second-buttons">
+                <button type="submit" class="order">Add to Cart</button>
+                <button type="submit" class="fav">Add to Favorites</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="preview-image">
+          <img src="images/img6.webp" alt="" loading="lazy" />
+          <div class="overlay"></div>
+          <div class="preview-desc">
+            <div class="text-cover">
+              <h3>Rustic Style</h3>
+              <h4>945,000 $</h4>
+            </div>
+            <div class="review-box">
+              <img src="images/arem.jpg" alt="" loading="lazy" />
+              <div class="review-info">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita, qui.
+                </p>
+                <h3>Andrew Villalon</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                <span class="none-two">(1924)</span>
+                <span class="none">$830,000</span>
+              </div>
+              <div class="second-buttons">
+                <button type="submit" class="order">Add to Cart</button>
+                <button type="submit" class="fav">Add to Favorites</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="preview-image" id="price4">
+          <img src="images/img7.webp" alt="" loading="lazy" />
+          <div class="overlay"></div>
+          <div class="preview-desc">
+            <div class="text-cover">
+              <h3>Tropical Style</h3>
+              <h4>945,000 $</h4>
+            </div>
+            <div class="review-box">
+              <img src="images/arem.jpg" alt="" loading="lazy" />
+              <div class="review-info">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita, qui.
+                </p>
+                <h3>Andrew Villalon</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                <span class="none-two">(2524)</span>
+                <span class="none">$850,000</span>
+              </div>
+              <div class="second-buttons">
+                <button type="submit" class="order">Add to Cart</button>
+                <button type="submit" class="fav">Add to Favorites</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="preview-image">
+          <img src="images/img8.webp" alt="" loading="lazy" />
+          <div class="overlay"></div>
+          <div class="preview-desc">
+            <div class="text-cover">
+              <h3>Victorian Style</h3>
+              <h4>985,000 $</h4>
+            </div>
+            <div class="review-box">
+              <img src="images/arem.jpg" alt="" loading="lazy" />
+              <div class="review-info">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita, qui.
+                </p>
+                <h3>Andrew Villalon</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                <span class="none-two">(1934)</span>
+                <span class="none">$840,000</span>
+              </div>
+              <div class="second-buttons">
+                <button type="submit" class="order">Add to Cart</button>
+                <button type="submit" class="fav">Add to Favorites</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="preview-image" id="price5">
+          <img src="images/img9.webp" alt="" loading="lazy" />
+          <div class="overlay"></div>
+          <div class="preview-desc">
+            <div class="text-cover">
+              <h3>Minimalist Style</h3>
+              <h4>935,000 $</h4>
+            </div>
+            <div class="review-box">
+              <img src="images/arem.jpg" alt="" loading="lazy" />
+              <div class="review-info">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita, qui.
+                </p>
+                <h3>Andrew Villalon</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                <span class="none-two">(2134)</span>
+                <span class="none">$850,000</span>
+              </div>
+              <div class="second-buttons">
+                <button type="submit" class="order">Add to Cart</button>
+                <button type="submit" class="fav">Add to Favorites</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="preview-image">
+          <img src="images/img10.webp" alt="" loading="lazy" />
+          <div class="overlay"></div>
+          <div class="preview-desc">
+            <div class="text-cover">
+              <h3>Hollywood Glam Style</h3>
+              <h4>985,000 $</h4>
+            </div>
+            <div class="review-box">
+              <img src="images/arem.jpg" alt="" loading="lazy" />
+              <div class="review-info">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita, qui.
+                </p>
+                <h3>Andrew Villalon</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                <span class="none-two">(2224)</span>
+                <span class="none">$890,000</span>
+              </div>
+              <div class="second-buttons">
+                <button type="submit" class="order">Add to Cart</button>
+                <button type="submit" class="fav">Add to Favorites</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-container" id="modal-container">
+        <div class="login-box">
+          <div class="login-left">
+            <div class="login-header">
+              <h2>Sign in</h2>
+              <hr />
+              <div class="login-icons-flex">
+                <div class="login-icons">
+                  <i class="fa fa-facebook"></i>
+                </div>
+                <div class="login-icons">
+                  <i class="fa fa-google"></i>
+                </div>
+                <div class="login-icons">
+                  <i class="fa fa-linkedin"></i>
+                </div>
+              </div>
+              <p class="use">or use your account</p>
+            </div>
+            <div class="login-setup">
+              <form action="">
+                <input type="email" placeholder="Email" required />
+                <input type="password" placeholder="Password" required />
+                <p class="forgot">Forgot your password?</p>
+                <button type="submit" class="create">Sign in</button>
+              </form>
+            </div>
+          </div>
+          <div class="login-right">
+            <div class="close-btn" id="close-btn">&times</div>
+            <div class="login-right-info">
+              <h2>Hey, User!</h2>
+              <p>Enter your personal details and start journey with us</p>
+              <button>
+                <a href="https://gotcha-interior-signup.vercel.app/">SIGN UP</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
-        <div class="social-links">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <p>Copyrights  Gotcha Interior</p>
-        </div>
+      <div class="social-links">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <p>Copyrights Gotcha Interior</p>
+      </div>
     </footer>
 
     <script>
-        
-    // search function
+      // search function
 
-    const searchbutton = () =>{
+      const searchbutton = () => {
         const searchbox = document.getElementById("search").value.toUpperCase();
-        const storeitems = document.getElementById("product-list")
-        const product = document.querySelectorAll(".product")
-        const productName = storeitems.getElementsByTagName("h6")
+        const storeitems = document.getElementById("product-list");
+        const product = document.querySelectorAll(".product");
+        const productName = storeitems.getElementsByTagName("h6");
 
-        for (var i =0; i < productName.length; i++){
-            let match = product[i].getElementsByTagName('h6')[0];
+        for (var i = 0; i < productName.length; i++) {
+          let match = product[i].getElementsByTagName("h6")[0];
 
-            if(match){
-                let textvalue = match.textContent || match.innerHTML
-                let div = document.getElementById('search_box');
+          if (match) {
+            let textvalue = match.textContent || match.innerHTML;
+            let div = document.getElementById("search_box");
 
-                if (textvalue.toUpperCase().indexOf(searchbox) > -1){
-                    product[i].style.display = "";
-                    div.style.visibility = "visible"
-                    div.style.opacity = 1;
-                } else {
-                    product[i].style.display = "none";
-                }
-                if (search.value ==0){
-                    div.style.visibility = "hidden";
-                    div.style.opacity = 0;
-                }
+            if (textvalue.toUpperCase().indexOf(searchbox) > -1) {
+              product[i].style.display = "";
+              div.style.visibility = "visible";
+              div.style.opacity = 1;
+            } else {
+              product[i].style.display = "none";
             }
+            if (search.value == 0) {
+              div.style.visibility = "hidden";
+              div.style.opacity = 0;
+            }
+          }
         }
-    }
+      };
 
+      // slide search
 
+      let search = document.getElementById("search");
+      let search_icon = document.getElementById("search_icon");
 
-    // slide search 
-    
-    let search = document.getElementById('search');
-    let search_icon = document.getElementById('search_icon');
+      search_icon.addEventListener("click", () => {
+        search.classList.toggle("search_input");
+      });
 
-    search_icon.addEventListener  ('click', () => {
-        search.classList.toggle('search_input');
-    })
+      // smooth scroll
 
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
 
-// smooth scroll
+            // Store hash
+            var hash = this.hash;
 
-$(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-  
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-  
-        // Store hash
-        var hash = this.hash;
-  
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 600, function(){
-  
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              600,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
         });
-      } // End if
-    });
-  });
-    
+      });
+
+      //modal
+      let openBtn = document.querySelectorAll(".second-buttons");
+      let modalContainer = document.getElementById("modal-container");
+      let closeBtn = document.getElementById("close-btn");
+
+      openBtn.forEach((e) => {
+        e.addEventListener("click", function () {
+          modalContainer.style.display = "block";
+        });
+      });
+
+      closeBtn.addEventListener("click", function () {
+        modalContainer.style.display = "none";
+      });
     </script>
 
- <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
